@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../css/contaktet.css">
+    <title>Kontakti - Hati Grup</title>
+</head>
+<body>
+<header>
+    <div class="brand">
+        <div class="logo">
+            <img src="../1000008450.jpg" alt="Hati Grup Logo">
+        </div>
+        <h1>Hati Grup</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Ballina</a>
+        <a href="sherbimet.html">Shërbimet</a>
+        <a href="projektet.html">Projektet</a>
+        <a href="ofertat.html">Ofertat</a>
+        <a href="contaktete.html">Kontakti</a>
+    </nav>
+</header>
+
+<main>
+    <section class="contact">
+        <div class="contact-wrapper">
+            <h2 class="title">Na Kontaktoni</h2>
+            <p>Jemi këtu për të ndihmuar me çdo pyetje që keni për ndërtimet dhe projektet tona.</p>
+            <p>📍 Lipjan, Kosovë</p>
+            <p>📞 <a href="tel:+38344123456">+383 44 123 456</a></p>
+            <p>📧 <a href="mailto:hotifestim22@gmail.com">hotifestim22@gmail.com</a></p>
+            <p>⏰ Orari: E hënë - E premte, 09:00 - 17:00</p>
+
+            <div class="contact-actions">
+                <a href="https://wa.me/38344123456?text=Pershendetje%20Hati%20Grup.%20Jam%20interesuar%20per%20sh%C3%ABrbimet%20tuaja." target="_blank" rel="noreferrer" class="contact-btn whatsapp">Na shkruaj në WhatsApp</a>
+                <a href="tel:+38344123456" class="contact-btn phone">Thirr +383 44 123 456</a>
+                <a href="mailto:hotifestim22@gmail.com" class="contact-btn email">Dërgo email</a>
+            </div>
+        </div>
+        <div class="contact-form-wrapper">
+            <h3>Na shkruaj përmes email-it</h3>
+            <form id="contactForm" action="#" method="post" class="contact-form" novalidate>
+                <label for="name">Emri juaj</label>
+                <input type="text" id="name" name="name" placeholder="Emri juaj" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="emailInput" name="email" placeholder="Emaili juaj" required>
+                <span id="emailError" class="error-message hidden">Ju lutemi shkruani një adresë email të vlefshme.</span>
+
+                <label for="subject">Subjekti</label>
+                <input type="text" id="subject" name="subject" placeholder="Subjekti" required>
+
+                <label for="message">Mesazhi juaj</label>
+                <textarea id="message" name="message" rows="6" placeholder="Shkruaj mesazhin këtu..." required></textarea>
+
+                <button type="submit">Dërgo mesazhin</button>
+                <p id="submitMessage" class="submit-message hidden" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Hati Grup. Të gjitha të drejtat e rezervuara.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
