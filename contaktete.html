@@ -1,74 +1,126 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="../css/contaktet.css">
-    <title>Kontakti - Hati Grup</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Hati Grup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/kontaktet.css">
 </head>
 <body>
-<header>
-    <div class="brand">
-        <div class="logo">
-            <img src="../1000008450.jpg" alt="Hati Grup Logo">
-        </div>
-        <h1>Hati Grup</h1>
-    </div>
 
-    <nav>
-        <a href="index.html">Ballina</a>
-        <a href="sherbimet.html">Shërbimet</a>
-        <a href="projektet.html">Projektet</a>
-        <a href="ofertat.html">Ofertat</a>
-        <a href="contaktete.html">Kontakti</a>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <rect x="4" y="18" width="8" height="18" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="16" y="10" width="8" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="28" y="4" width="8" height="32" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="2" y1="36" x2="38" y2="36" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </span>
+      <span class="brand-text">HATI <em>GRUP</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Ballina</a> 
+
+      <a href="rreth.html">Rreth Nesh</a>
+      <a href="projektet.html">Projektet</a>
+      <a href="index.html#procesi">Procesi</a>
+      <a href="kontaktet.html" class="nav-cta is-current">Kontakt</a>
     </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Hap menynë" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<main>
-    <section class="contact">
-        <div class="contact-wrapper">
-            <h2 class="title">Na Kontaktoni</h2>
-            <p>Jemi këtu për të ndihmuar me çdo pyetje që keni për ndërtimet dhe projektet tona.</p>
-            <p>📍 Lipjan, Kosovë</p>
-            <p>📞 <a href="tel:+38344123456">+383 44 123 456</a></p>
-            <p>📧 <a href="mailto:hotifestim22@gmail.com">hotifestim22@gmail.com</a></p>
-            <p>⏰ Orari: E hënë - E premte, 09:00 - 17:00</p>
+<section class="page-banner">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="wrap page-banner-inner">
+    <p class="breadcrumb"><a href="index.html">Kreu</a> / Kontakt</p>
+    <h1>Planifikoni banesën tuaj të ardhshme</h1>
+    <p class="page-banner-lead">Na shkruani për një projekt aktual ose për të diskutuar një truall që keni në pronësi.</p>
+  </div>
+</section>
 
-            <div class="contact-actions">
-                <a href="https://wa.me/38344123456?text=Pershendetje%20Hati%20Grup.%20Jam%20interesuar%20per%20sh%C3%ABrbimet%20tuaja." target="_blank" rel="noreferrer" class="contact-btn whatsapp">Na shkruaj në WhatsApp</a>
-                <a href="tel:+38344123456" class="contact-btn phone">Thirr +383 44 123 456</a>
-                <a href="mailto:hotifestim22@gmail.com" class="contact-btn email">Dërgo email</a>
-            </div>
-        </div>
-        <div class="contact-form-wrapper">
-            <h3>Na shkruaj përmes email-it</h3>
-            <form id="contactForm" action="#" method="post" class="contact-form" novalidate>
-                <label for="name">Emri juaj</label>
-                <input type="text" id="name" name="name" placeholder="Emri juaj" required>
+<section class="contact-section">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Të dhënat</p>
+      <h2>Na gjeni këtu</h2>
+      <ul class="info-list">
+        <li><span>Zyra</span>Rruga UÇK, Nr. 45, Prishtinë</li>
+        <li><span>Telefon</span>+383 44 123 456</li>
+        <li><span>Email</span>info@hatigrup.com</li>
+        <li><span>Orari</span>E Hënë – E Premte, 08:00–16:00</li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Emri e mbiemri</label>
+        <input type="text" id="name" name="name" placeholder="Shkruani emrin tuaj" required>
+        <span class="field-error" data-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ju@email.com" required>
+        <span class="field-error" data-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="phone">Telefoni</label>
+        <input type="tel" id="phone" name="phone" placeholder="+383 4x xxx xxx">
+      </div>
+      <div class="form-row">
+        <label for="project">Cili projekt ju intereson?</label>
+        <select id="project" name="project">
+          <option value="">Zgjidhni një projekt</option>
+          <option value="dardania">Rezidenca Dardania</option>
+          <option value="arberia">Kompleksi Arbëria Park</option>
+          <option value="bardha">Shtëpitë e Bardha</option>
+          <option value="velania">Rezidenca Velania</option>
+          <option value="lakrishte">Kulla Lakrishte</option>
+          <option value="kalabria">Rezidenca Kalabria</option>
+          <option value="tjeter">Diçka tjetër</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">Mesazhi</label>
+        <textarea id="message" name="message" rows="4" placeholder="Na tregoni pak më shumë..." required></textarea>
+        <span class="field-error" data-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Dërgo kërkesën</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
 
-                <label for="email">Email</label>
-                <input type="email" id="emailInput" name="email" placeholder="Emaili juaj" required>
-                <span id="emailError" class="error-message hidden">Ju lutemi shkruani një adresë email të vlefshme.</span>
-
-                <label for="subject">Subjekti</label>
-                <input type="text" id="subject" name="subject" placeholder="Subjekti" required>
-
-                <label for="message">Mesazhi juaj</label>
-                <textarea id="message" name="message" rows="6" placeholder="Shkruaj mesazhin këtu..." required></textarea>
-
-                <button type="submit">Dërgo mesazhin</button>
-                <p id="submitMessage" class="submit-message hidden" aria-live="polite"></p>
-            </form>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2024 Hati Grup. Të gjitha të drejtat e rezervuara.</p>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="26" height="26">
+          <rect x="4" y="18" width="8" height="18" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="16" y="10" width="8" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="28" y="4" width="8" height="32" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="2" y1="36" x2="38" y2="36" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </span>
+      <span class="brand-text">HATI <em>GRUP</em></span>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Hati Grup. Të gjitha të drejtat e rezervuara.</p>
+    <div class="footer-links">
+      <a href="rreth.html">Rreth Nesh</a>
+      <a href="projektet.html">Projektet</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/kontakt.js"></script>
 </body>
 </html>
