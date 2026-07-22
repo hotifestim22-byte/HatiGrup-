@@ -1,76 +1,126 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="../css/projektet.css">
-
-    <title>Projektet - Hati Grup</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Hati Grup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/kontaktet.css">
 </head>
 <body>
 
-<header>
-    <div class="brand">
-        <div class="logo">
-            <img src="../1000008450.jpg" alt="Hati Grup Logo">
-        </div>
-        <h1>Hati Grup</h1>
-    </div>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <rect x="4" y="18" width="8" height="18" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="16" y="10" width="8" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="28" y="4" width="8" height="32" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="2" y1="36" x2="38" y2="36" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </span>
+      <span class="brand-text">HATI <em>GRUP</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Ballina</a> 
 
-    <nav>
-        <a href="index.html">Ballina</a>
-        <a href="sherbimet.html">Shërbimet</a>
-        <a href="projektet.html">Projektet</a>
-        <a href="ofertat.html">Ofertat</a>
-        <a href="contaktete.html">Kontakti</a>
+      <a href="rreth.html">Rreth Nesh</a>
+      <a href="projektet.html">Projektet</a>
+      <a href="index.html#procesi">Procesi</a>
+      <a href="kontaktet.html" class="nav-cta is-current">Kontakt</a>
     </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Hap menynë" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section class="projects-section">
-    <h2 class="title">Projektet e Fundit</h2>
-    <p class="section-description">Zbuloni punimet tona më të fundit në ndërtim dhe rikonstruksion me fokus në cilësi, strukturë moderne dhe realizim në afat.</p>
-
-    <div class="projects">
-        <article class="project">
-            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="Vilë Moderne - Projekt i Hati Grup">
-            <div class="project-details">
-                <h3>Vilë Moderne</h3>
-                <p>Banesë e re me dizajn të pastër, hapësira të ndriçuara dhe zgjidhje funksionale.</p>
-            </div>
-        </article>
-
-        <article class="project">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Objekt Afarist - Projekt i Hati Grup">
-            <div class="project-details">
-                <h3>Objekt Afarist</h3>
-                <p>Ndërtim komercial i përshtatur për biznesin, me infrastrukturë të qëndrueshme dhe sallë moderne.</p>
-            </div>
-        </article>
-
-        <article class="project">
-            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800" alt="Kompleks Banesor - Projekt i Hati Grup">
-            <div class="project-details">
-                <h3>Kompleks Banesor</h3>
-                <p>Sistemi i ndërtesës përfshin apartamente të luksit të mesëm dhe dizajn të menduar deri në detaj.</p>
-            </div>
-        </article>
-    </div>
-
-    <div class="project-cta">
-        <h3>Jeni gati të ndërtoni projektin tuaj të ardhshëm?</h3>
-        <p>Na kontaktoni sot për një ofertë profesionale dhe plan të personalizuar për ndërtimin e banesës, ambientit afarist ose rikonstruksionit.</p>
-        <a href="contaktete.html">Kontaktoni ekipin tonë</a>
-    </div>
+<section class="page-banner">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="wrap page-banner-inner">
+    <p class="breadcrumb"><a href="index.html">Kreu</a> / Kontakt</p>
+    <h1>Planifikoni banesën tuaj të ardhshme</h1>
+    <p class="page-banner-lead">Na shkruani për një projekt aktual ose për të diskutuar një truall që keni në pronësi.</p>
+  </div>
 </section>
 
-<footer>
-    <p>&copy; 2024 Hati Grup. Të gjitha të drejtat e rezervuara.</p>
+<section class="contact-section">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Të dhënat</p>
+      <h2>Na gjeni këtu</h2>
+      <ul class="info-list">
+        <li><span>Zyra</span>Rruga : Bajram Gashi , Nr. 45, Lipjan</li>
+        <li><span>Telefon</span>+383 44 694 111</li>
+        <li><span>Email</span>HatiGrup@gmail.com</li>
+        <li><span>Orari</span>E Hënë – E Premte, 08:00–16:00</li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Emri e mbiemri</label>
+        <input type="text" id="name" name="name" placeholder="Shkruani emrin tuaj" required>
+        <span class="field-error" data-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ju@email.com" required>
+        <span class="field-error" data-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="phone">Telefoni</label>
+        <input type="tel" id="phone" name="phone" placeholder="+383 4x xxx xxx">
+      </div>
+      <div class="form-row">
+        <label for="project">Cili projekt ju intereson?</label>
+        <select id="project" name="project">
+          <option value="">Zgjidhni një projekt</option>
+          <option value="dardania">Rezidenca Dardania</option>
+          <option value="arberia">Kompleksi Arbëria Park</option>
+          <option value="bardha">Shtëpitë e Bardha</option>
+          <option value="velania">Rezidenca Velania</option>
+          <option value="lakrishte">Kulla Lakrishte</option>
+          <option value="kalabria">Rezidenca Kalabria</option>
+          <option value="tjeter">Diçka tjetër</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">Mesazhi</label>
+        <textarea id="message" name="message" rows="4" placeholder="Na tregoni pak më shumë..." required></textarea>
+        <span class="field-error" data-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Dërgo kërkesën</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="26" height="26">
+          <rect x="4" y="18" width="8" height="18" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="16" y="10" width="8" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="28" y="4" width="8" height="32" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="2" y1="36" x2="38" y2="36" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </span>
+      <span class="brand-text">HATI <em>GRUP</em></span>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Hati Grup. Të gjitha të drejtat e rezervuara.</p>
+    <div class="footer-links">
+      <a href="rreth.html">Rreth Nesh</a>
+      <a href="projektet.html">Projektet</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
 </footer>
 
-<script src="../js/script.js"></script>
-
+<script src="/js/common.js"></script>
+<script src="/js/kontakt.js"></script>
 </body>
 </html>
